@@ -1,4 +1,3 @@
-import Container from "@/components/Shared/Container";
 import React from "react";
 import { RiShipLine, RiDiscountPercentLine } from "react-icons/ri";
 import { LiaPiggyBankSolid } from "react-icons/lia";
@@ -7,7 +6,7 @@ import { BsPeople } from "react-icons/bs";
 
 export default function features() {
   return (
-    <Container>
+    <>
       <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 xl:flex xl:justify-between mb-18">
         <div className="bg-neutral-100 py-3 w-full shadow flex gap-2 justify-center px-2 items-center">
           <RiShipLine size={35}/>
@@ -38,6 +37,6 @@ export default function features() {
           </div>
         </div>
       </div>
-    </Container>
+    </>
   );
 }
