@@ -1,4 +1,5 @@
 import Banner from "@/components/Home/Banner/Banner";
+import FAQ from "@/components/Home/FAQ/FAQ";
 import FeaturedProducts from "@/components/Home/FeaturedProducts/FeaturedProducts";
 import Features from "@/components/Home/Features/Features";
 import TopBrands from "@/components/Home/TopBrands/TopBrands";
@@ -11,6 +12,7 @@ export default function Home() {
       <Features />
       <FeaturedProducts />
       <TopBrands />
+      <FAQ />
     </Container>
   );
 }

@@ -7,7 +7,7 @@ import { BsPeople } from "react-icons/bs";
 export default function features() {
   return (
     <>
-      <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 xl:flex xl:justify-between mb-18">
+      <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 xl:flex xl:justify-between mb-22">
         <div className="bg-neutral-100 py-3 w-full shadow flex gap-2 justify-center px-2 items-center">
           <RiShipLine size={35}/>
           <div>
