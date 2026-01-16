@@ -46,7 +46,7 @@ export default function FeaturedProducts() {
 
       <div className="flex flex-wrap justify-center gap-4 xl:justify-between">
         {productDetails.map((product) => (
-          <div key={product.id} className="bg-neutral-50 shadow">
+          <div key={product.id} className="bg-neutral-50 shadow rounded-sm">
             <Image
               src={product.image}
               alt="product image"
