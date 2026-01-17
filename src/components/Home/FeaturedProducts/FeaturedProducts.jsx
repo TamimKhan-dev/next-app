@@ -31,7 +31,7 @@ export default function FeaturedProducts() {
       id: 5,
       title: "Corsair Vengeance DDR5 32GB 3200MHz RAM",
       image: "/ddr5 vengence 3200mhz 32gb ram.webp",
-      price: '52,000 ৳',
+      price: "52,000 ৳",
     },
   ];
 
@@ -48,15 +48,17 @@ export default function FeaturedProducts() {
         {productDetails.map((product) => (
           <div key={product.id} className="bg-neutral-50 shadow rounded-sm">
             <Image
-              src={product.image}
+              src={`/assets${product.image}`}
               alt="product image"
               width={250}
               height={250}
               className="border-b-3 border-neutral-400"
             />
             <div className="mt-2 h-23 px-2 pb-2 flex flex-col justify-between">
-                <h4 className="max-w-52 font-semibold text-sm text-neutral-800">{product.title}</h4>
-                <p className="font-semibold text-neutral-800">{product.price}</p>
+              <h4 className="max-w-52 font-semibold text-sm text-neutral-800">
+                {product.title}
+              </h4>
+              <p className="font-semibold text-neutral-800">{product.price}</p>
             </div>
           </div>
         ))}

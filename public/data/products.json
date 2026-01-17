@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "title": "Sony PlayStation 5 Slim Gaming Console",
+    "description": "The PlayStation 5 Slim delivers ultra-fast loading, immersive 4K gaming, and a sleek, compact design for next-generation console gaming.",
+    "image": "/assets/playstation-5-pro-500x500.webp",
+    "price": "68,900 ৳"
+  },
+  {
+    "id": 2,
+    "title": "NVIDIA GeForce RTX 4060 Gaming OC 8GB Graphics Card",
+    "description": "A powerful GPU featuring ray tracing and DLSS technology, ideal for high-performance gaming and creative workloads.",
+    "image": "/assets/geforce-rtx-4060-gaming-oc-8g-01-500x500.webp",
+    "price": "42,000 ৳"
+  },
+  {
+    "id": 3,
+    "title": "DJI Mini 4K Fly More Combo Drone",
+    "description": "A lightweight drone with 4K video recording, extended flight time, and advanced stabilization for smooth aerial shots.",
+    "image": "/assets/mini-4k-fly-more-combo-01-500x500.webp",
+    "price": "78,000 ৳"
+  },
+  {
+    "id": 4,
+    "title": "Gigabyte G34WQC Ultrawide Gaming Monitor",
+    "description": "A 34-inch ultrawide gaming monitor with high refresh rate and immersive visuals for competitive and cinematic gaming.",
+    "image": "/assets/G34WQC-Gaming-Monitor.jpg",
+    "price": "52,000 ৳"
+  },
+  {
+    "id": 5,
+    "title": "Corsair Vengeance DDR5 32GB 3200MHz RAM",
+    "description": "High-capacity memory designed for smooth multitasking, gaming, and professional performance on modern systems.",
+    "image": "/assets/ddr5 vengence 3200mhz 32gb ram.webp",
+    "price": "52,000 ৳"
+  },
+  {
+    "id": 6,
+    "title": "AMD Ryzen 7 5800X Desktop Processor",
+    "description": "An 8-core, 16-thread processor built for high-end gaming, streaming, and productivity tasks.",
+    "image": "https://i.ibb.co/PsrJ4fyx/5600x-001-500x500.jpg",
+    "price": "31,500 ৳"
+  },
+  {
+    "id": 7,
+    "title": "Logitech G Pro Wireless Gaming Mouse",
+    "description": "A lightweight wireless gaming mouse with precise sensor performance, trusted by professional esports players.",
+    "image": "https://i.ibb.co/9kGPTPhV/g-pro-wireless-01-500x500.jpg",
+    "price": "12,500 ৳"
+  },
+  {
+    "id": 8,
+    "title": "Samsung 980 Pro 1TB NVMe SSD",
+    "description": "High-speed NVMe SSD offering blazing-fast read and write speeds for quick boot times and data transfers.",
+    "image": "https://i.ibb.co/qtP7kMs/980-1tb-500x500.jpg",
+    "price": "14,000 ৳"
+  },
+  {
+  "id": 9,
+  "title": "ASUS TUF Gaming 750W 80+ Gold Power Supply",
+  "description": "A reliable 750W power supply with 80+ Gold efficiency, designed for stable performance and long-term durability.",
+  "image": "https://i.ibb.co/H1Qsnb0/tuf-gaming-750w-gold-2-500x500.jpg",
+  "price": "13,500 ৳"
+},
+{
+  "id": 10,
+  "title": "Cooler Master Hyper 212 RGB CPU Air Cooler",
+  "description": "Efficient CPU air cooler with RGB lighting, delivering excellent thermal performance for gaming and productivity builds.",
+  "image": "https://i.ibb.co/DD07wpKC/hyper-212-rgb-black-01-500x500.jpg",
+  "price": "4,800 ৳"
+}
+]
