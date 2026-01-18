@@ -1,6 +1,6 @@
 "use client";
 import React from 'react'
-import { Github, Mail, Dribbble, Linkedin, Eye, EyeOff } from 'lucide-react';
+import { Github, Mail, Dribbble, Linkedin } from 'lucide-react';
 import toast from 'react-hot-toast';
 
 export default function Profile() {
@@ -53,16 +53,10 @@ export default function Profile() {
 
             {/* Social Icons */}
             <div className="flex justify-center sm:justify-start gap-3 mt-4">
-              <a href="#" className="p-2 hover:bg-gray-200 rounded-lg transition-colors">
-                <Dribbble className="w-5 h-5 text-gray-600" />
-              </a>
-              <a href="#" className="p-2 hover:bg-gray-200 rounded-lg transition-colors">
+              <a href="https://github.com/TamimKhan-dev" target='_blank' className="p-2 hover:bg-gray-200 rounded-lg transition-colors">
                 <Github className="w-5 h-5 text-gray-600" />
               </a>
-              <a href="#" className="p-2 hover:bg-gray-200 rounded-lg transition-colors">
-                <Mail className="w-5 h-5 text-gray-600" />
-              </a>
-              <a href="#" className="p-2 hover:bg-gray-200 rounded-lg transition-colors">
+              <a href="https://www.linkedin.com/in/tamimkhan-dev" target='_blank' className="p-2 hover:bg-gray-200 rounded-lg transition-colors">
                 <Linkedin className="w-5 h-5 text-gray-600" />
               </a>
             </div>

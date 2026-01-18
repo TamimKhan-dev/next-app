@@ -8,6 +8,8 @@ export async function POST(req) {
 
     response.cookies.set("isLoggedIn", "true", {
       httpOnly: true,
+      secure: true,
+      sameSite: "lax",
       path: "/",
     });
 
@@ -16,6 +18,6 @@ export async function POST(req) {
 
   return NextResponse.json(
     { success: false, message: "Invalid credentials" },
-    { status: 401 }
+    { status: 401 },
   );
 }
