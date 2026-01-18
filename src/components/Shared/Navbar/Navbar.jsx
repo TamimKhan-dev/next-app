@@ -40,6 +40,13 @@ export default function Navbar({ isLoggedIn }) {
                   All Components
                 </NavLink>
               </li>
+              {isLoggedIn && (
+                <li>
+                  <NavLink href="/profile" type="Navlink">
+                    Profile
+                  </NavLink>
+                </li>
+              )}
             </ul>
 
             <div className="dropdown dropdown-end">
@@ -57,9 +64,14 @@ export default function Navbar({ isLoggedIn }) {
                   <NavLink href="/allComponents">All Components</NavLink>
                 </li>
                 {isLoggedIn ? (
-                  <li>
-                    <button onClick={handleLogout}>Logout</button>
-                  </li>
+                  <>
+                    <li className="md:hidden">
+                      <NavLink href="/profile">Profile</NavLink>
+                    </li>
+                    <li>
+                      <button onClick={handleLogout}>Logout</button>
+                    </li>
+                  </>
                 ) : (
                   <li>
                     <Link href="/login">Login</Link>

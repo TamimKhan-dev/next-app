@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function FeaturedProducts() {
@@ -46,7 +47,8 @@ export default function FeaturedProducts() {
 
       <div className="flex flex-wrap justify-center gap-4 xl:justify-between">
         {productDetails.map((product) => (
-          <div key={product.id} className="bg-neutral-50 shadow rounded-sm">
+          <Link  key={product.id} href='allComponents'>
+            <div className="bg-neutral-50 shadow rounded-sm cursor-pointer">
             <Image
               src={`/assets${product.image}`}
               alt="product image"
@@ -61,6 +63,7 @@ export default function FeaturedProducts() {
               <p className="font-semibold text-neutral-800">{product.price}</p>
             </div>
           </div>
+          </Link>
         ))}
       </div>
     </div>

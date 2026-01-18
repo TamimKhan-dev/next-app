@@ -3,6 +3,7 @@ import Container from "@/components/Shared/Container";
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
+import toast from "react-hot-toast";
 
 export default function Details() {
   const [products, setProducts] = useState([]);
@@ -31,7 +32,7 @@ export default function Details() {
             <p className="font-semibold text-neutral-600 mb-3">{singleProduct?.description}</p>
             <div className="flex justify-between items-center">
                 <span className="font-semibold">{singleProduct?.price}</span>
-                <button className="btn bg-lime-200 text white rounded-full">Add to cart</button>
+                <button onClick={() => toast.error('Feature pending')} className="btn bg-lime-200 text white rounded-full">Add to cart</button>
             </div>
           </div>
         </div>
