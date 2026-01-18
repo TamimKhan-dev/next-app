@@ -1,11 +1,21 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Container from "../Container";
 import Link from "next/link";
 import NavLink from "../NavLink";
 import { FiMenu } from "react-icons/fi";
+import toast from "react-hot-toast";
 
-export default function Navbar() {
+export default function Navbar({ isLoggedIn }) {
+  const handleLogout = async () => {
+    const res = await fetch("/api/logout", { method: "POST" });
+    if (res.ok) {
+      toast.success("Logged out successfully!");
+      window.location.href = "/login";
+    }
+  };
+  console.log(isLoggedIn);
   return (
     <div className="w-full sticky top-0 z-50 bg-white shadow-sm">
       <div className="py-3">
@@ -34,7 +44,7 @@ export default function Navbar() {
 
             <div className="dropdown dropdown-end">
               <div tabIndex={0} role="button" className="btn rounded-full">
-                <FiMenu size={18}/>
+                <FiMenu size={18} />
               </div>
               <ul
                 tabIndex="-1"
@@ -46,12 +56,15 @@ export default function Navbar() {
                 <li className="md:hidden">
                   <NavLink href="/allComponents">All Components</NavLink>
                 </li>
-                <li>
-                  <Link href='/login'>Login</Link>
-                </li>
-                <li>
-                  <Link href='signUp'>Sign Up</Link>
-                </li>
+                {isLoggedIn ? (
+                  <li>
+                    <button onClick={handleLogout}>Logout</button>
+                  </li>
+                ) : (
+                  <li>
+                    <Link href="/login">Login</Link>
+                  </li>
+                )}
               </ul>
             </div>
           </div>
