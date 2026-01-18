@@ -23,7 +23,7 @@ export default function Navbar({ isLoggedIn }) {
           <div className="flex flex-row items-center justify-between gap-3 md:gap-0">
             {/* Logo */}
             <Link href="/" className="flex gap-2 items-center">
-              <Image src="/motherboard.png" alt="logo" width="40" height="40" />
+              <Image src="/assets/motherboard.png" alt="logo" width="40" height="40" />
               <div>
                 <h5 className="font-bold text-2xl">ComTech</h5>
               </div>

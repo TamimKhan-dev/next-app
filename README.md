@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ComTech
 
-## Getting Started
+**ComTech** is a modern e-commerce web application for selling computer components, accessories, and tech-related products.  
+The project is built using Next.js App Router and demonstrates authentication, protected routes, and clean UI structure.
 
-First, run the development server:
+🔗 **Live Site:** https://next-app-henna-xi.vercel.app
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📌 Short Project Description
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+ComTech is a Next.js-based application designed to showcase and sell computer components and accessories.  
+It focuses on routing, authentication using cookies, protected pages, and reusable layouts following best practices of the App Router.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Route Summary – ComTech
 
-To learn more about Next.js, take a look at the following resources:
+This document provides a summary of all application routes used in the ComTech website, including their purpose and access level.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛣️ Application Routes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **`/` (Home / Landing Page)**
+  - Public route
+  - Displays the main landing page with product highlights and sections
+  - Accessible to all users without authentication
 
-## Deploy on Vercel
+- **`/login`**
+  - Public route
+  - Allows users to log in using mock credentials
+  - On successful login, users are redirected to a protected page
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **`/allComponents`**
+  - Public route
+  - Displays a list of available computer components and accessories
+  - No authentication required
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **`/profile`**
+  - Private route
+  - Shows user profile details in read-only format
+  - Redirects unauthenticated users to the login page
+
+---
+
+## 🔐 Route Protection Logic
+
+- Private routes are protected using **Next.js middleware**
+- Authentication status is checked via a cookie (`isLoggedIn`)
+- Unauthenticated users are automatically redirected to the login page
+
+---
+
+## ⚙️ Setup & Installation Instructions
+
+Clone the repository:
+   ```bash
+   1.git clone https://github.com/your-username/comtech.git
+   2.cd comtech
+   3.npm install
+   4.npm run dev
+   5.http://localhost:3000

@@ -9,7 +9,7 @@ export default function Footer() {
       <footer className="footer footer-horizontal footer-center bg-[#121212] text-white p-10">
         <Link href='/'>
           <div className="flex gap-3 items-center cursor-pointer">
-            <Image src="/motherboard.png" alt="logo" width={40} height={40} />
+            <Image src="/assets/motherboard.png" alt="logo" width={40} height={40} />
             <h2 className="lg:text-2xl font-bold">
               Com<span className="text-lime-200">Tech</span>
             </h2>

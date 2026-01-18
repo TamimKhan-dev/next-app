@@ -28,7 +28,7 @@ export default function Banner() {
         >
           <SwiperSlide className="h-full relative">
             <Image
-              src="/1.webp"
+              src="/assets/1.webp"
               alt="banner image"
               fill
               className="w-full"
@@ -37,7 +37,7 @@ export default function Banner() {
           </SwiperSlide>
           <SwiperSlide className="h-full relative">
             <Image
-              src="/2.webp"
+              src="/assets/2.webp"
               alt="banner image"
               fill
               className="w-full"
@@ -46,7 +46,7 @@ export default function Banner() {
           </SwiperSlide>
           <SwiperSlide className="h-full relative">
             <Image
-              src="/3.webp"
+              src="/assets/3.webp"
               alt="banner image"
               fill
               className="w-full"
@@ -55,7 +55,7 @@ export default function Banner() {
           </SwiperSlide>
           <SwiperSlide className="h-full relative">
             <Image
-              src="/4.png"
+              src="/assets/4.png"
               alt="banner image"
               fill
               className="w-full"
